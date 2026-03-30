@@ -1,5 +1,4 @@
 # a very simple PORT SCANNER 
-#my website ip 172.20.10.1 for test purposes 
 
 import socket # Used to establish a connection with the internet 
 from IPy import IP # Module used for handling IPv4 and IPv6 addressess and networks 
