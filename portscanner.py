@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # a very simple PORT SCANNER
 
 import socket  # Used to establish a connection with the internet
@@ -12,6 +13,9 @@ def scan(target):
     print("\n" + " :) Scanning Target: " + str(target))
     for port in range(20, 85):
         scan_port(converted_ip, port)  # This line calls the scan_port() function, passing the converted IP address (converted_ip) and the current port number (port) as arguments. The scan_port() function is responsible for attempting to establish a connection to the specified IP address and port, and if successful, it will check for any banner information from the service running on that port. This loop iterates through a range of ports from 20 to 84 (inclusive) to perform the scanning process on each of those ports for the given target.
+=======
+# a very simple PORT SCANNER 
+>>>>>>> 7177fa47c22f3f977690621cfb74fc7988dcc899
 
 
 def check_ip(ip):
@@ -50,6 +54,7 @@ def scan_port(ipaddress, port):  # function that scans the ports
         pass
 
 
+<<<<<<< HEAD
 # Asking the user to input the desired IP address to scan
 if __name__ == "__main__":
     targets = input(
@@ -60,3 +65,7 @@ if __name__ == "__main__":
             scan(ip_add.strip(" "))
     else:
         scan(targets)
+=======
+for port in range(20,85):
+    scan_port(converted_ip, port)
+>>>>>>> 7177fa47c22f3f977690621cfb74fc7988dcc899
